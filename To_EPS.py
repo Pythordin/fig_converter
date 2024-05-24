@@ -30,7 +30,9 @@ def convert_to_eps():
                 image = image.convert('RGB')
         # 画像をEPSに変換して保存
         image.save(eps_path, 'EPS')
-        messagebox.showinfo("Conversion Complete", "Image to EPS conversion completed successfully!")  # 変換完了のメッセージを表示
+        messagebox.showinfo("Conversion Complete", "Image to EPS conversion completed successfully!")# 変換完了のメッセージを表示
+    else:
+        messagebox.showinfo("Error", "Enter a proper variable") 
 
 # GUIのセットアップ
 ctypes.windll.shcore.SetProcessDpiAwareness(1)
